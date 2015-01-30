@@ -1,13 +1,51 @@
+GIT
+  remote: git@github.com:cbdr/cortex-client.git
+  revision: 454f4db68fe361b92470d837a21ff4732d816ca4
+  specs:
+    cortex-client (0.3.0)
+      faraday (~> 0.9)
+      faraday_middleware (~> 0.9.0)
+      oauth2 (~> 0.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    cortex-exceptions (0.0.4)
+    diff-lcs (1.2.5)
+    dotenv (1.0.2)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
     haml (4.0.6)
       tilt
     hike (1.2.3)
+    interactor (3.1.0)
+    jwt (1.2.1)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    oauth2 (0.9.4)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
+    rspec (3.1.0)
+      rspec-core (~> 3.1.0)
+      rspec-expectations (~> 3.1.0)
+      rspec-mocks (~> 3.1.0)
+    rspec-core (3.1.7)
+      rspec-support (~> 3.1.0)
+    rspec-expectations (3.1.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.1.0)
+    rspec-mocks (3.1.3)
+      rspec-support (~> 3.1.0)
+    rspec-support (3.1.2)
     sass (3.4.10)
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -26,7 +64,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cortex-client!
+  cortex-exceptions (~> 0.0.4)
+  dotenv (~> 1.0.2)
   haml (~> 4.0.0)
+  interactor (~> 3.1.0)
+  rspec (~> 3.1.0)
   sass (~> 3.4.1)
   sinatra (~> 1.4.5)
   sprockets (~> 2.12.0)
